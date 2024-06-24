@@ -1,0 +1,135 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container .input-text {
+    padding-top: 5rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.container .input-text #mainSentence {
+    width: 80%;
+    height: 28rem;
+    font-size: 2.4rem;
+    color: #0A3871;
+    font-weight: 500;
+    padding: 1rem 0;
+    text-align: start;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.container .input-text #mainSentence::placeholder {
+    color: #0A3871;
+}
+
+.container .input-text .warning {
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.container .input-text .warning p {
+    margin-bottom: 1rem;
+}
+
+.container .input-text .warning p span{
+    font-size: 1.4rem;
+}
+
+.container .input-text .warning .buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.container .input-text .warning .buttons button, .container .show-text .found button {
+    font-size: 1.4rem;
+    width: 24rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+}
+
+.container .input-text .warning .buttons button.make-text {
+    background-color: #0A3871;
+    color: white;
+    border: none;
+}
+
+.container .input-text .warning .buttons button.remake-text, .container .show-text .found button {
+    background-color: transparent;
+}
+
+.container .show-text {
+    height: 85%;
+    width: 30rem;
+    background-color: #FFFFFF;
+    border-radius: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .show-text .not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.container .show-text .not-found img {
+    width: 90%;
+}
+
+.container .show-text .not-found h2 {
+    font-size: 2rem;
+    padding: 0 2rem;
+    margin-bottom: -1rem;
+}
+
+.container .show-text .not-found p {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+}
+
+.container .show-text .found {
+    padding: 2.8rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .show-text .found .texto-descriptografado {
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 75%;
+    font-size: 2.4rem;
+    color: #0A3871;
+    font-weight: 500;
+    background-color: transparent;
+    text-align: justify;
+}
+
+.container .show-text .not-found.hidden, .container .show-text .found.hidden{
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}

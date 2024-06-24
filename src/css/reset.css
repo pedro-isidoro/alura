@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgba(173, 216, 230, 0.54);
+}
